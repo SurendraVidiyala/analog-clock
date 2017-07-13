@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background: url(http://res.cloudinary.com/surendravidiyala/image/upload/v1498446818/alarm_auewu1.jpg)no-repeat center center fixed;
+  background-size:cover;
+}
+.clock {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsla(0,0%,100%,.35);
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  border: solid .5em white;
+  margin: 5em auto 0;
+  padding: 1em;
+}
+.footer{bottom:100%;}
+.icon{color:red;}
+p,a{color:white;}
+.clock-face {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-.75em);
+}
+
+.hand {
+  position: absolute;
+  top: calc(50% - .4em);
+  background: black;
+  border-bottom: solid 0 transparent;
+  border-left: solid 0 transparent;
+  border-top: solid 0 transparent;
+  height: .4em;
+  width: 50%;
+  transform-origin: 100%;
+}
+
+.minute-hand {
+  background-color: transparent;
+  border-right: solid 8em black;
+  transform: rotate(90deg);
+}
+
+.hour-hand {
+  top: calc(50% - .33em);
+  background-color: transparent;
+  border-right: solid 7.25em black;
+  height: .66em;
+  transform: rotate(180deg);
+}
+
+.second-hand {
+  top: 50%;
+  background-color: darkred;
+  height: .1em;
+  transform: rotate(300deg);
+}
+
+.boss {
+  position: absolute;
+  top: calc(50% - .75em); left: 50%;
+  background: black;
+  border-radius: 50%;
+  height: 1.5em;
+  transform: translate(-50%);
+  width: 1.5em;
+}
+
+.clock li {
+  position: absolute;
+  top: 0; left: 0;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 300;
+  height: 2em;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  line-height: 2em;
+  width: 2em;
+}
+
+.clock li:nth-child(12) { top: -1em;    left:  7.5em;  }
+.clock li:nth-child(1)  { top:   .5em;  left: 11.75em; }
+.clock li:nth-child(2)  { top:  3.5em; left: 14.75em; }
+.clock li:nth-child(3)  { top:  7.5em;  left: 15.75em; }
+.clock li:nth-child(4)  { top: 11.75em; left: 14.75em; }
+.clock li:nth-child(5)  { top: 14.5em; left: 11.75em; }
+.clock li:nth-child(6)  { top: 15.5em;  left:  7.5em;  }
+.clock li:nth-child(7)  { top: 14.5em; left:  3.25em; }
+.clock li:nth-child(8)  { top: 11.5em; left:  .25em;  }
+.clock li:nth-child(9)  { top:  7.5em;  left: -.75em;  }
+.clock li:nth-child(10) { top:  3.5em; left:  .25em;      }
+.clock li:nth-child(11) { top:   .5em;  left:  3.25em;    }
+footer p {
+  position: absolute;
+  left: 40vw;
+  bottom: 0;
+  text-align: center;
+}
